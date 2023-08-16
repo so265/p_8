@@ -1,11 +1,11 @@
 import React from 'react';
 import "../styleComponents/Header.scss";
 
-function Navbar() {
+function Header() {
   return (
     <nav className="navbar">
       <div className='navbar_logo'>
-        <img className='logoKasa' src="logoKasa.svg" alt="logo kasa" />
+        <img className='logoKasa' src="logoKasa.png" alt="logo kasa" />
       </div>
       <div className='nav-items'>
       <div>Accueil</div>
@@ -15,4 +15,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Header;
