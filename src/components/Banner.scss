@@ -1,0 +1,24 @@
+.banner {
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    //align-items: center; // Cette ligne alignera également verticalement l'image au milieu
+    height: 50vh;
+    position: relative;
+
+    .img-paysage {
+        border-radius: 30px;
+        width: 90%;
+        height: 50%;
+        object-fit: cover;
+        margin-top: 4%;
+   }
+
+    h1 {
+        position: absolute;
+        margin-top: 140px;
+        color: white;
+        font-weight: 300;
+    }
+
+}
