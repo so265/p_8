@@ -15,7 +15,7 @@ function LocationPage() {
     <div>
       <h1>{location.title}</h1>
       {location.pictures.map((picture, index) => (
-        <img key={index} src={picture} alt={`Picture ${index}`} />
+        <img key={index} src={picture} alt={`logements ${index}`} />
       ))}
       <p>{location.description}</p>
     </div>
