@@ -4,12 +4,11 @@
     align-items: center;
     padding: 0 2rem;
     color: #ff6060;
-   
     font-weight: 700;
     gap: 57px;
+    margin-top: 30px;
 
-   .logoKasa {
-        margin-top: 30px;
+    .logoKasa {
         margin-left: 70px;
         width: 120px;
     }
@@ -19,6 +18,26 @@
         align-items: center;
         gap: 20px;
         margin-right: 75px;
-        cursor: pointer;
     }
+
+    .accueil-active {
+        text-decoration: none;
+        cursor: pointer;
+        color: #ff6060;
+    }
+
+    .accueil-active:hover {
+        text-decoration: underline;
+    }
+
+    .about-active {
+        text-decoration: none;
+        cursor: pointer;
+        color: #ff6060;
+    }
+
+    .about-active:hover {
+        text-decoration: underline;
+    }
+
 }
