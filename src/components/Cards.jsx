@@ -4,8 +4,8 @@ import "../styleComponents/Cards.scss"
 
 function Cards() {
   return (
-    <div>
-    <div className='grid-carts'>Titre </div>
+    <div className='cards-container'>
+    <div className='title-carts'>Titre </div>
     </div>
   )
 }

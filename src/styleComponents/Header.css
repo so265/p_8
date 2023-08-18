@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  color: #ff6060;
+  font-weight: 700;
+  gap: 57px;
+}
+.navbar .logoKasa {
+  margin-top: 30px;
+  margin-left: 70px;
+  width: 120px;
+}
+.navbar .nav-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 75px;
+}
+.navbar .accueil-active {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ff6060;
+}
+.navbar .accueil-active:hover {
+  text-decoration: underline;
+}
+.navbar .about-active {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ff6060;
+}
+.navbar .about-active:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.centered, .return-link, .oups, .error { /*je regroupe les éléments similaires*/
+  display: flex;
+  color: #ff6060;
+  justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+  font-family: Montserrat;
+}
+
+.error {
+  /*Evite les répétitions de code*/
+  font-size: 150px;
+  color: #ff6060;
+  margin-top: 20vh;
+}
+
+.oups {
+  margin-top: 5vh;
+  font-size: 28px;
+}
+
+.return-link {
+  margin-top: 10vh;
+}/*# sourceMappingURL=NotFoundPage.css.map */

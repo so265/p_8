@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import HousingData from './Housing.json';
+import '../stylePages/Location.scss'
 
 function LocationPage() {
   const { id } = useParams();
@@ -13,11 +14,12 @@ function LocationPage() {
 
   return (
     <div>
-      <h1>{location.title}</h1>
+      
       {location.pictures.map((picture, index) => (
-        <img key={index} src={picture} alt={`logements ${index}`} />
+        <img key={index} src={picture} alt={`logements ${index}`} className='location-images' />
       ))}
-      <p>{location.description}</p>
+      <h1 className='title-images'>{location.title}</h1>
+      <p className='description-pictures'>{location.location}</p>
     </div>
   );
 }
