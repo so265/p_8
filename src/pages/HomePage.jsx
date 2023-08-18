@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner.jsx';
-i
+import Cards from '../components/Cards.jsx';
 
 
 function HomePage() {
@@ -16,5 +16,6 @@ function HomePage() {
     
   );
 }
+
 
 export default HomePage;
