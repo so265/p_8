@@ -3,22 +3,23 @@
     display: flex;
     justify-content: center;
     //align-items: center; // Cette ligne alignera également verticalement l'image au milieu
-    height: 50vh;
     position: relative;
 
     .img-paysage {
         border-radius: 30px;
         width: 90%;
-        height: 50%;
+        max-height: 200px;
         object-fit: cover;
-        margin-top: 4%;
-   }
+        margin-top: 2%;
+    }
 
     h1 {
         position: absolute;
-        margin-top: 170px;
         color: white;
         font-weight: 300;
-    }
+        top: 50%; /* Je place le titre au milieu verticalement */
+        left: 50%; /*Je Place le titre au milieu horizontalement */
+        transform: translate(-50%, -50%); /* J'Ajuste la position pour centrer parfaitement */
+        }
 
 }

@@ -1,0 +1,20 @@
+footer {
+  background-color: black;
+  height: 8rem;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+footer .footer-logo {
+  color: white;
+  width: 100px;
+}
+footer .copyright {
+  color: white;
+  font-family: Montserrat;
+}/*# sourceMappingURL=Footer.css.map */

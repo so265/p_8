@@ -1,0 +1,6 @@
+.grid-carts {
+  background: linear-gradient(to bottom, #ff6060, rgba(255, 96, 96, 0.5));
+  min-height: 20vh;
+  border-radius: 0.5rem;
+  display: flex;
+}/*# sourceMappingURL=Cards.css.map */
