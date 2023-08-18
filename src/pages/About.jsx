@@ -1,13 +1,16 @@
-import React from 'react'
-import Banner from '../components/Banner.jsx'
+import React from 'react';
+import Banner from '../components/Banner';
+import Cards from '../components/Cards';
 
 function About() {
   return (
     <div>
-    <div> <Banner /></div>
-    <div>About</div>
+      <Banner imageSrc="montagne.png"  />
+      <div>
+        <Cards />
+      </div>
     </div>
-  )
+  );
 }
 
-export default About
+export default About;
