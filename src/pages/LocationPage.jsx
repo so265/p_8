@@ -19,7 +19,7 @@ function LocationPage() {
         <img key={index} src={picture} alt={`logements ${index}`} className='location-images' />
       ))}
       <h1 className='title-images'>{location.title}</h1>
-      <p className='description-pictures'>{location.location}</p>
+      <p className='city-location'>{location.location}</p>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+@import '../styleComponents/colors'; //J'importe le fichier colors.scss pour appliquer la couleur rouge quand cela est nécessaire
+
 .location-images {
   max-height: 400px; /* Ajustez cette valeur selon vos besoins */
   object-fit: cover; /* Ajustez le comportement de l'image (cover, contain, etc.) */
@@ -11,11 +13,13 @@
 }
 
 .title-images {
-   margin-left: 100px;
-   font-family: Montserrat;
+  color: $primary-color; //J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
+  margin-left: 100px;
+  font-family: Montserrat;
 }
 
-.description-pictures {
-    margin-left: 100px;
-    font-family: Montserrat;
+.city-location {
+  color: $primary-color; //J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
+  margin-left: 100px;
+  font-family: Montserrat;
 }
