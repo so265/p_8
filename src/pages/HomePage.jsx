@@ -6,16 +6,10 @@ import Cards from '../components/Cards.jsx';
 function HomePage() {
   return (
     <div>
-       
-      
-       <Banner imageSrc="homeBanner.jpg" title="Chez vous, partout et ailleurs" />
-     
+      <Banner imageSrc="homeBanner.jpg" title="Chez vous, partout et ailleurs" />
       <Cards />
-      </div>
-     
-    
+    </div>
   );
 }
-
 
 export default HomePage;
