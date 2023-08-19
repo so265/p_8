@@ -1,6 +1,8 @@
+@import '../styleComponents/colors'; //J'importe le fichier colors.scss pour appliquer la couleur rouge quand cela est nécessaire
+
 .centered { /*je regroupe les éléments similaires*/
     display: flex;
-    color: #ff6060;
+    color: $primary-color; //J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
     justify-content: center; /* Centrage horizontal */
     align-items: center;  /* Centrage vertical */
     font-family: Montserrat;
@@ -9,7 +11,7 @@
 .error {
     @extend .centered; /*Evite les répétitions de code*/
     font-size: 150px;
-    color: #ff6060;
+    color: $primary-color; //J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
     margin-top: 20vh;
 }
 
