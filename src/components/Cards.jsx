@@ -11,7 +11,7 @@ function Cards() {
   return (
     <div className='cards-container'>{/*Avec map je parcours les 6 derniers logements (location) et j'affiche les images et titres avec des liens (NavLink). */}
       {limitedHousing.map((location) => ( 
-        <NavLink to={`/location/${location.id}`}> {/*Ceci crée un lien de navigation (<NavLink>) vers la page du logement en utilisant l'ID unique du logement dans l'URL. */}
+        <NavLink to={`/location/${location.id}`} key={location.id}> {/*Ceci crée un lien de navigation (<NavLink>) vers la page du logement en utilisant l'ID unique du logement dans l'URL. key=chaque élément génére une clé unique */}
          <img src={location.cover} alt={location.title} /> {/*J'affiche l'image et le titre, cover et title sont issues du fichier Housing.json*/}
           <p>{location.title}</p>
         </NavLink>
