@@ -5,8 +5,7 @@ function About() {
   return (
     <div>
       <Banner imageSrc="montagne.png" />
-      <div>
-      </div>
+      
     </div>
   );
 }
