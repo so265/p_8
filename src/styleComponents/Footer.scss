@@ -6,7 +6,7 @@ footer {
     align-items: center; /* Centre verticalement */
     flex-direction: column;
     width: 100%;
-    position: absolute;
+    position: absolute; //Permet de positionner le footer toujours en bas.
     bottom: 0;
     left: 0;
 
