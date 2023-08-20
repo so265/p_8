@@ -1,6 +1,8 @@
 import React from 'react';
 import Banner from '../components/Banner.jsx';
 import Cards from '../components/Cards.jsx';
+//import Housing from './Housing.json';
+
 
 
 function HomePage() {

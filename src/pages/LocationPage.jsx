@@ -1,12 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import HousingData from './Housing.json';
+import Housing from './Housing.json';
+
 import '../stylePages/Location.scss'
 
 function LocationPage() {
   const { id } = useParams();
 
-  const location = HousingData.find(item => item.id === id);
+  const location = Housing.find(item => item.id === id);
 
   if (!location) {
     return <div>Location not found.</div>;

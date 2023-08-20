@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'; //J'importe le composant NavLink de la bibliothèque react-router-dom, qui est utilisé pour créer des liens de navigation entre les différentes pages de mon application.
 import "../styleComponents/Header.scss";
 
 function Header() {
