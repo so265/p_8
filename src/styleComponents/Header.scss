@@ -22,13 +22,37 @@
         margin-right: 75px;
     }
 
-    .accueil-active {
+    a {
         text-decoration: none;
         cursor: pointer;
         color: $primary-color;
     }
 
-    .accueil-active:hover {
-        text-decoration: underline;
-    }
+    .nav-link { //Ce sélecteur cible les éléments de lien de navigation, Accueil et A propos.
+        text-decoration: none;
+        cursor: pointer;
+        color: $primary-color;
+        position: relative;
+      
+        //"&" me permet de me référer à l'élément parent, ici "nav-link"
+        &:after {  // J'utilise ce pseudo-élément pour créer la ligne sous le texte du lien
+          content: ""; //Je définis le contenu du pseudo-élément comme une chaîne vide.
+          display: block;
+          width: 0; //permet de le rendre invisible au départ
+          height: 0.2px;
+          background-color: $primary-color;
+          position: absolute; // Positionne le pseudo-élément de manière absolue par rapport au lien parent
+          bottom: -0.02px;
+          left: 0;
+        }
+      
+        &.active { //Ce sélécteur cible le lien actif, soit "Accueil" soit "A Propos"
+          &:after { //A l'intérieur du lien de navigation actif, je définis la largeur à 100%, du trait sous le mot  
+            width: 100%;
+          }
+        }
+      
+       
+      }
+      
 }

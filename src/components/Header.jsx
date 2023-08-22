@@ -1,25 +1,26 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'; //J'importe le composant NavLink de la bibliothèque react-router-dom, qui est utilisé pour créer des liens de navigation entre les différentes pages de mon application.
+import { NavLink } from 'react-router-dom';
 import "../styleComponents/Header.scss";
 
 function Header() {
   return (
     <nav className="navbar">
       <div className='navbar_logo'>
-      <img className='logoKasa' src="/logoKasa.png" alt="logo kasa" />
+        <img className='logoKasa' src="/logoKasa.png" alt="logo kasa" /> {/*J'affiche l'image du logo Kasa avec la classe CSS logoKasa */}
       </div>
       <div className='nav-items'>
-        <NavLink to="/" className="accueil-active">
+        <NavLink to="/" className="nav-link"> {/*Je crée un lien de navigation vers la page d'accueil */}
           Accueil
         </NavLink>
-        <div>
-        <NavLink to="/about" className="accueil-active">
-          A propos
+        <NavLink to="/about" className="nav-link"> {/* {/*Je crée un lien de navigation vers la page A Propos */} 
+          A Propos
         </NavLink>
-  </div>
       </div>
     </nav>
   );
 }
 
 export default Header;
+
+
+
