@@ -1,0 +1,66 @@
+@import './colors'; //J'importe le fichier colors.scss pour appliquer la couleur rouge quand cela est nécessaire
+
+
+.collapse-container {
+    color: $primary-color; //J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.collapse-button {
+    height: 50px;
+    color: white;
+    background-color: $primary-color;
+    width: 76%;
+    border: none;
+    display: flex;
+    margin-top: 40px;
+}
+
+.collapse-title {
+    align-items: center;
+}
+
+.collapse-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.collapse-content {
+background-color: $second-color;
+width: 76%;
+margin-left: auto; 
+margin-right: auto;
+font-size: 20px;
+}
+
+.collapse-container:last-child {
+    margin-bottom: 40px; // J'ajoute une marge inférieure au dernier élément
+  }
+  
+  /* Style par défaut pour la flèche */
+.arrow {
+    width: 30px; 
+    height: 30px; 
+    transition: transform 0.5s ease; 
+    
+  }
+  
+  /* Style lorsque le collapsible est ouvert et la flèche pointe vers le bas */
+  .arrow.active {
+    transform: rotate(-180deg); /* Fait pivoter la flèche vers le bas */
+  }
+
+  .arrow-container {
+    position: absolute;
+    top: 50%; /* Positionne la flèche à la moitié de la hauteur du parent */
+    right: 0;
+    transform: translateY(-50%); /* Centre verticalement la flèche */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
