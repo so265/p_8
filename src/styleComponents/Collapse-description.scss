@@ -50,7 +50,7 @@
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  animation: slideDown 0.2s ease-in-out forwards;
+  animation: slideDown 0.3s ease-in-out forwards;
   transform-origin: top; /*Je fais en sorte que la transition parte du haut */
 }
 
@@ -58,7 +58,7 @@
   0% {
     max-height: 0;
     opacity: 0;
-    transform: translateY(-9%); /*Pour que le texte parte de plus bas */
+    transform: translateY(-5%); /*Pour que le texte parte de plus bas */
   }
   100% {
     max-height: 500px; 
@@ -66,9 +66,6 @@
     transform: translateY(0);
   }
 }
-
-
-
 
 .collapse-container:last-child {
     margin-bottom: 40px; // J'ajoute une marge inférieure au dernier élément
