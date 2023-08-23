@@ -51,17 +51,17 @@
   overflow: hidden;
   opacity: 0;
   animation: slideDown 0.2s ease-in-out forwards;
-  transform-origin: bottom; /* Fait en sorte que la transition parte du bas */
+  transform-origin: top; /*Je fais en sorte que la transition parte du haut */
 }
 
 @keyframes slideDown {
   0% {
     max-height: 0;
     opacity: 0;
-    transform: translateY(-9%); /* Changez à 100% pour que le texte parte de plus bas */
+    transform: translateY(-9%); /*Pour que le texte parte de plus bas */
   }
   100% {
-    max-height: 500px; /* Ajustez la valeur en fonction de votre contenu */
+    max-height: 500px; 
     opacity: 1;
     transform: translateY(0);
   }
