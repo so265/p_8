@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-grow: 1; ////
    
 }
 
@@ -14,29 +15,44 @@
     height: 50px;
     color: white;
     background-color: $primary-color;
-    width: 76%;
+    width: 87%;
     border: none;
-    display: flex;
     margin-top: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
 }
 
 .collapse-title {
     align-items: center;
 }
 
-.collapse-button {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
 
 .collapse-content {
-background-color: $second-color;
-width: 76%;
-margin-left: auto; 
-margin-right: auto;
-font-size: 20px;
+  background-color: $second-color;
+  width: 87%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px; /* Ajout d'un padding en bas pour l'espace */
+  text-align: left; /* Ajustez ceci en fonction de vos besoins */
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre le contenu horizontalement */
+  justify-content: center; /* Centre le contenu verticalement */
+  padding-left: 20px;
+  min-height: 80px; 
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 1.5;
+ //width: 100%;
+  margin: auto;
 }
+
+
 
 .collapse-container:last-child {
     margin-bottom: 40px; // J'ajoute une marge inférieure au dernier élément
@@ -47,6 +63,7 @@ font-size: 20px;
     width: 30px; 
     height: 30px; 
     transition: transform 0.5s ease; 
+    padding-left: 20px;
     
   }
   

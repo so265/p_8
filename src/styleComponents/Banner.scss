@@ -1,3 +1,4 @@
+
 .banner {
     max-width: 100vw;
     display: flex;
@@ -7,7 +8,7 @@
 
     .img-paysage {
         border-radius: 30px;
-        width: 90%;
+        width: 100%;
         max-height: 200px;
         object-fit: cover;
         margin-top: 2%;
@@ -17,9 +18,10 @@
         position: absolute;
         color: white;
         font-weight: 300;
-        top: 50%; /* Je place le titre au milieu verticalement */
+        top: 42%; /* Je place le titre au milieu verticalement */
         left: 50%; /*Je Place le titre au milieu horizontalement */
         transform: translate(-50%, -50%); /* J'Ajuste la position pour centrer parfaitement */
+        font-size: xxx-large;
         }
 
 }
