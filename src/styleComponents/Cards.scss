@@ -48,12 +48,11 @@
   max-width: 90%;
 }
 
-/********Media queries*******/
-
-@media (max-width: 1024px) {
-
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1023px) {
   .cards-container {
-    padding: 0 0px;
+    padding: 0;
+    background-color: $third-color;
   }
 
   .card-link {
@@ -63,3 +62,37 @@
     width: 90%;
   }
 }
+
+/* Mobile */
+@media (min-width: 360px) and (max-width: 768px) {
+  .cards-container {
+    padding: 10px; /* Ajoutez un peu d'espace interne */
+    background-color: $primary-color; /* Changez la couleur de fond */
+    margin: 0; /* Supprimez les marges */
+    border-radius: 10px; /* Réduisez le rayon de la bordure */
+  }
+
+  .card-link {
+    width: 100%;
+    height: auto; /* Ajustez la hauteur automatiquement */
+    margin-top: 10px; /* Réduisez la marge supérieure */
+  }
+
+  .card-title {
+    background-color: $primary-color; /* Vous pouvez ajuster la couleur ici si nécessaire */
+    height: auto; /* Ajustez la hauteur automatiquement */
+    margin-top: 0; /* Pas besoin de marge supérieure ici */
+  }
+
+  .card-image {
+    border-radius: 10px 10px 0 0; /* Ajustez le rayon de la bordure */
+    max-width: 100%; /* Ajustez la largeur de l'image */
+    height: auto; /* Ajustez la hauteur automatiquement */
+  }
+}
+
+
+
+
+
+

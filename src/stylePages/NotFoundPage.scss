@@ -12,7 +12,8 @@
     @extend .centered; /*Evite les répétitions de code*/
     font-size: 150px;
     color: $primary-color; //J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
-    margin-top: 20vh;
+    margin-top: 15vh;
+    font-weight: 900;
 }
 
 .oups {
@@ -26,3 +27,12 @@
     @extend .centered;
     margin-top: 10vh;
 }
+
+/*****Media queries*******/
+
+@media (max-width: 768px) {
+    .oups {
+        white-space: normal; /* Permet au texte de passer à la ligne si nécessaire */
+        text-align: center; /* Centre le texte horizontalement */
+      }
+  }
