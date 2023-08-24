@@ -58,3 +58,24 @@
       }
       
 }
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .logoKasa {
+    width: max-content;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+
+  
+}
+
+/* Mobile */
+@media (min-width: 360px) and (max-width: 768px) {
+  
+}
+
+
+
