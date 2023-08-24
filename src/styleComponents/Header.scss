@@ -61,11 +61,19 @@
 
 /* Tablet */
 @media (min-width: 769px) and (max-width: 1023px) {
-  .logoKasa {
-    width: max-content;
+.navbar {
+  justify-content: flex-start; /* Aligner les éléments au début de la barre de navigation */
+    gap: 0px; /* Espacement horizontal entre les éléments */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+  .navbar .logoKasa { 
+    width: 124px;
+   
   }
 
-  .nav-link {
+  .navbar .nav-link {
     font-size: 20px;
   }
 
@@ -74,8 +82,29 @@
 
 /* Mobile */
 @media (min-width: 360px) and (max-width: 768px) {
+  .navbar {
+    justify-content: flex-start; /* Aligner les éléments au début de la barre de navigation */
+      gap: 10px; /* Espacement horizontal entre les éléments */
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
   
-}
+    .navbar .logoKasa { 
+      width: 124px;
+     
+    }
 
+   .navbar_logo {
+      width: 50%;
+    }
 
-
+   .navbar .nav-items {
+      gap: 20px;
+    }
+  
+    .navbar .nav-link {
+      font-size: 15px;
+    }
+  
+    
+  }

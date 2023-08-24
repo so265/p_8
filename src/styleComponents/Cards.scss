@@ -61,33 +61,38 @@
     margin-top: 20px;
     width: 90%;
   }
+
+  .card-title {
+    width: 88.5%;
+  }
 }
 
 /* Mobile */
 @media (min-width: 360px) and (max-width: 768px) {
   .cards-container {
-    padding: 10px; /* Ajoutez un peu d'espace interne */
-    background-color: $primary-color; /* Changez la couleur de fond */
-    margin: 0; /* Supprimez les marges */
-    border-radius: 10px; /* Réduisez le rayon de la bordure */
+    padding: 10px; 
+    background-color: transparent; 
+    margin: 0; 
+    border-radius: 10px; 
+    row-gap: 0px;
   }
 
   .card-link {
     width: 100%;
-    height: auto; /* Ajustez la hauteur automatiquement */
-    margin-top: 10px; /* Réduisez la marge supérieure */
+    height: auto; 
+    margin-top: 10px; 
   }
 
   .card-title {
-    background-color: $primary-color; /* Vous pouvez ajuster la couleur ici si nécessaire */
-    height: auto; /* Ajustez la hauteur automatiquement */
-    margin-top: 0; /* Pas besoin de marge supérieure ici */
+   width: 97%;
+    //height: auto;
+    margin-top: 0; 
   }
 
   .card-image {
-    border-radius: 10px 10px 0 0; /* Ajustez le rayon de la bordure */
-    max-width: 100%; /* Ajustez la largeur de l'image */
-    height: auto; /* Ajustez la hauteur automatiquement */
+    border-radius: 10px 10px 0 0; 
+    max-width: 100%; 
+    height: auto;
   }
 }
 
