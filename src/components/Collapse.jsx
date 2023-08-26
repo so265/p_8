@@ -26,13 +26,12 @@ function Collapse({ title, content }) {
           />
         </div>
       </div>
-      <div>
+     
         {/* Si isActive est vrai, j'affiche une div avec le contenu.
              Cela permet d'afficher ou de masquer la description du collapse. */}
         {isActive && <div className="collapse-content">{content}</div>}
       </div>
-    </div>
-  );
+    );
 }
 
 export default Collapse; // J'exporte le composant Collapse pour pouvoir l'utiliser ailleurs

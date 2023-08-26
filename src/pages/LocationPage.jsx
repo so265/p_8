@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import Housing from './Housing.json';
 
 import '../stylePages/Location.scss'
@@ -10,7 +10,7 @@ function LocationPage() {
   const location = Housing.find(item => item.id === id);
 
   if (!location) {
-    return <div>Location not found.</div>;
+    return <Navigate to="ailleurs" />
   }
 
   return (
