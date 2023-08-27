@@ -1,4 +1,37 @@
-.chevron-left, .chevron-right{
-    background-color: black;
-}
-
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slider-image {
+    min-width: 100%; // Utilisez min-width pour maintenir l'aspect ratio
+    height: 400px;   // Ajustez la hauteur selon vos besoins
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .chevron-left {
+    left: 20px;
+  }
+  
+  .chevron-right {
+    right: 20px;
+  }
+  
