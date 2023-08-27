@@ -10,7 +10,7 @@ function LocationPage() {
   const location = Housing.find(item => item.id === id);
 
   if (!location) {
-    return <Navigate to="ailleurs" />
+    return <Navigate to="somewhere/else" />
   }
 
   return (
@@ -26,3 +26,4 @@ function LocationPage() {
 }
 
 export default LocationPage;
+
