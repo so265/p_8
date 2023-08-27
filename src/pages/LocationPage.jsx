@@ -1,8 +1,10 @@
 import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import Housing from './Housing.json';
+import Carrousel from '../components/Carrousel.jsx';
 
 import '../stylePages/Location.scss'
+
 
 function LocationPage() {
   const { id } = useParams();
@@ -14,8 +16,9 @@ function LocationPage() {
   }
 
   return (
+    
     <div>
-      
+      <Carrousel />
       {location.pictures.map((picture, index) => (
         <img key={index} src={picture} alt={`logements ${index}`} className='location-images' />
       ))}
