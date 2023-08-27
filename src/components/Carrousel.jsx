@@ -1,9 +1,14 @@
 import React from 'react'
 import '../styleComponents/Carrousel.scss'
+import ArrowLeft from '../assets/chevron-carrousel-left.png'
+import ArrowRight from'../assets/chevron-carrousel-right.png'
 
 function Carrousel() {
   return (
-    <div>Carrousel</div>
+    <div>
+    <div><img className='arrow-left' src={ArrowLeft} alt="Fléche gauche" /></div>
+    <div><img className='arrow-left' src={ArrowRight} alt="Fléche droite" /></div>
+    </div>
   )
 }
 
