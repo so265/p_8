@@ -9,17 +9,29 @@
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
   margin-top: 3%;
-  border-radius: 30px
+  border-radius: 30px;
 }
 
 .title-images {
-  color: $primary-color; //J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
+  color: $primary-color; // J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
   margin-left: 20px;
   font-family: Montserrat;
 }
 
+.host {
+  display: flex;
+  align-items: center;
+  margin-left: 70%;
+  margin-bottom: 150px;
+}
+
+.host-info {
+  display: flex;
+  align-items: center;
+}
+
 .city-location {
-  color: $primary-color; //J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
+  color: $primary-color; // J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
   margin-left: 20px;
   font-family: Montserrat;
 }
@@ -34,7 +46,7 @@
 .tag {
   margin-top: 15px;
   padding: 5px 15px;
-  background-color: $primary-color; /* Utilisez votre couleur rouge depuis colors.scss */
+  background-color: $primary-color; /* J'ajoute ma couleur rouge depuis colors.scss */
   color: $third-color;
   font-size: 14px;
   border-radius: 20px;
@@ -43,8 +55,33 @@
   text-align: center;
 }
 
-.stars {
- justify-content: flex-end;
+.star-full {
+  justify-content: flex-end;
+  color: $primary-color;
+ 
+  font-size: xx-large;
+  font-weight: bold;
 }
 
+.star-full, 
+.star-grey {
+  width: 30px;
+  height: 30px;
+}
 
+.picture-person {
+  width: 50px; // Ajustez la largeur de l'image selon vos besoins
+  height: 50px; // Ajustez la hauteur de l'image selon vos besoins
+  margin-right: 10px; // Ajustez la marge selon vos besoins
+}
+
+.name {
+  font-size: 18px; // Ajustez la taille de la police selon vos besoins
+  font-weight: bold;
+}
+
+.stars {
+  display: flex;
+  margin-top: 100px;
+  align-self: flex-start; // Ajout de l'alignement vers le début (gauche)
+}
