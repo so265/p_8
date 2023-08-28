@@ -22,58 +22,26 @@
   color: $primary-color; //J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
   margin-left: 100px;
   font-family: Montserrat;
-} /*******/
+}
 
-
-
-.location-carousel {
+.tags-housing {
+  color: $primary-color;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .carousel-images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-
-    .location-image {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
-      &.active {
-        opacity: 1;
-      }
-    }
-  }
-
-  .carousel-arrow {
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    outline: none;
-  }
-
-  .left-arrow {
-    transform: rotate(180deg);
-  }
-
-  .right-arrow {
-    transform: rotate(0deg);
-  }
+  justify-content: start;
+  margin-left: 7%;
 }
 
-.slideCount {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%); //Pour le centrer au milieu, méthode de transformation CSS qui déplace un élément horizontalement de 50% de sa propre largeur vers la gauche
-  padding: 5px 10px;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  
+.tag {
+  margin-top: 15px;
+  padding: 5px 15px;
+  background-color: $primary-color; /* Utilisez votre couleur rouge depuis colors.scss */
+  color: $third-color;
+  font-size: 14px;
+  border-radius: 20px;
+  margin: 0 5px;
+  width: 5rem;
+  text-align: center;
 }
+
+
 

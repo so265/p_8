@@ -35,4 +35,16 @@
   .chevron-right {
     right: 20px;
   }
+
+  .slideCount {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); //Pour le centrer au milieu méthode de transformation CSS qui déplace un élément horizontalement de 50% de sa propre largeur vers la gauche
+    padding: 5px 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+  }
+  
   
