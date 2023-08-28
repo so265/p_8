@@ -7,16 +7,19 @@ import GreyStar from '../assets/grey-star.png'; // Chemin vers l'image d'étoile
 
 import '../stylePages/Location.scss';
 
+// Fonction pour afficher les étoiles pleines et grises
 function renderStars(rating) {
   const fullStars = Math.floor(rating);
   const remaining = 5 - fullStars;
   
   const stars = [];
 
+// Boucle pour ajouter les étoiles pleines
   for (let i = 0; i < fullStars; i++) {
     stars.push(<img key={i} src={PleineStars} alt="FullStar" className='star-full' />);
   }
 
+  // Boucle pour ajouter les étoiles grises
   for (let i = 0; i < remaining; i++) {
     stars.push(<img key={i + fullStars} src={GreyStar} alt="Grey Star" className='star-grey' />);
   }
@@ -24,38 +27,42 @@ function renderStars(rating) {
   return stars;
 }
 
+// Fonction principale de la page Location
 function LocationPage() {
-  const { id } = useParams();
+  const { id } = useParams(); // J'obtiens l'ID du paramètre d'URL
 
-  const location = Housing.find(item => item.id === id);
+  const location = Housing.find(item => item.id === id); // Je trouve les informations du logement basé sur l'ID
 
   if (!location) {
-    return <Navigate to="somewhere/else" />;
+    return <Navigate to="somewhere/else" />; // Si aucune information n'est trouvée, je redirige ailleurs
   }
 
+  // Affichage des détails de la page
   return (
     <div className='location-container'>
-      <Carrousel Housing={location.pictures} />
+      <Carrousel Housing={location.pictures} /> {/* Affichage du carrousel d'images avec les images du logement */}
       <div className='location-details'>
-        <h1 className='title-images'>{location.title}</h1>
-        <div className='host'>
-          {/* Utilisation de la classe 'host-info' pour grouper le prénom et l'image */}
-          <div className='host-info'>
-            <p className='name'>{location.host.name}</p>
-            <img className='picture-person' src={location.host.picture} alt="Host" />
+        <div className='left-column'>
+          <h1 className='title-images'>{location.title}</h1> {/* Affichage du titre du logement */}
+          <p className='city-location'>{location.location}</p> {/* Affichage de l'emplacement du logement */}
+          <div className='tags-housing'>
+            {/* Boucle pour afficher les tags du logement */}
+            {location.tags.map((tag, index) => (  
+              <span key={index} className='tag'>{tag}</span>
+            ))}
           </div>
-          {/* Étoiles affichées en dessous du prénom et de l'image */}
-          <div className='stars'>{renderStars(parseInt(location.rating, 10))}</div>
         </div>
-        <p className='city-location'>{location.location}</p>
-        <div className='tags-housing'>
-          {location.tags.map((tag, index) => (
-            <span key={index} className='tag'>{tag}</span>
-          ))}
+        <div className='right-column'>
+          <div className='host-info'>
+          <p className='name'>{location.host.name}</p> {/* Affichage du nom de l'hôte */}
+            <img className='picture-person' src={location.host.picture} alt="Host" /> {/* Affichage de la photo de l'hôte */}
+           
+          </div>
+          <div className='stars'>{renderStars(parseInt(location.rating))}</div> {/* Affichage des étoiles de notation */}
         </div>
       </div>
     </div>
   );
 }
 
-export default LocationPage;
+export default LocationPage; // J'exporte la fonction principale pour être utilisée ailleurs

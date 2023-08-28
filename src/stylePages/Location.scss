@@ -73,15 +73,42 @@
   width: 50px; // Ajustez la largeur de l'image selon vos besoins
   height: 50px; // Ajustez la hauteur de l'image selon vos besoins
   margin-right: 10px; // Ajustez la marge selon vos besoins
+  border-radius: 50%; //La photo ainsi est arrondie
+  margin-right: 15px;
 }
 
 .name {
   font-size: 18px; // Ajustez la taille de la police selon vos besoins
   font-weight: bold;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; /* Centrer horizontalement */
+  text-align: center; 
+  width: 10px;
+  margin-right: 40px;
+
+
 }
 
 .stars {
   display: flex;
-  margin-top: 100px;
-  align-self: flex-start; // Ajout de l'alignement vers le début (gauche)
+  align-self: flex-start; // Ajout de l'alignement vers le début sur la gauche
+  margin-right: 15px;
+}
+
+
+.location-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-column {
+  width: 50%;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
