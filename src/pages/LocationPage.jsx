@@ -24,10 +24,13 @@ function LocationPage() {
         {location.tags.map((tag, index) => ( 
           <span key={index} className='tag'>{tag}</span> 
         ))} {/* Affichage des tags de la location sous forme de balises span */}
+        
       </div>
     </div>
   );
 }
 
 export default LocationPage;
+
+
 
