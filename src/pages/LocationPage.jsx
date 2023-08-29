@@ -4,6 +4,7 @@ import Housing from './Housing.json';
 import Carrousel from '../components/Carrousel.jsx';
 import PleineStars from '../assets/full-star.png'; // Chemin vers l'image d'étoile pleine
 import GreyStar from '../assets/grey-star.png'; // Chemin vers l'image d'étoile grise
+import Collapse from '../components/Collapse.jsx'
 
 import '../stylePages/Location.scss';
 
@@ -51,6 +52,11 @@ function LocationPage() {
               <span key={index} className='tag'>{tag}</span>
             ))}
           </div>
+          <Collapse
+          title="Description"
+          content={location.description} //Je fais apparaitre la description en provenance du fichier Housing.json dans mon composant collapse
+          className="collapse-description"
+        />
         </div>
         <div className='right-column'>
           <div className='host-info'>
@@ -59,7 +65,15 @@ function LocationPage() {
            
           </div>
           <div className='stars'>{renderStars(parseInt(location.rating))}</div> {/* Affichage des étoiles de notation */}
+          <Collapse 
+          title="Equipements"
+          content={location.equipments.map((equipment, index) => (
+            <div key={index} className='equipment'>{equipment}</div>
+          ))}
+          className='collapse-equipements'
+          />
         </div>
+       
       </div>
     </div>
   );
