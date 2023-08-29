@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from '../components/Banner';
-import Collapse from '../components/Collapse.jsx'
+import Collapse from '../components/Collapse.jsx';
+import '../stylePages/About.scss';
 
 function About() {
   const accordionData = [

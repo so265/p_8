@@ -63,20 +63,26 @@ function LocationPage() {
           <div className='stars'>{renderStars(parseInt(location.rating))}</div> {/* Affichage des étoiles de notation */}
           </div>
           </div>
+          
           {/* Conteneur des collapses */}
           <div className='collapses-flex'>
-          <div className='collapse-container-location'>
-          <Collapse
+          <div className='collapse-container-location'> {/*Premier collapse pour la description */}
+          <Collapse 
           title="Description"
           content={location.description} //Je fais apparaitre la description en provenance du fichier Housing.json dans mon composant collapse
           className="collapse-description"
         />
 </div>
-<div className='collapse-container-location'>
+<div className='collapse-container-location'> {/*Deuxiéme collapse pour les équipements */}
+
+{/*Utilisation de la fonction map pour parcourir chaque élément de la liste d'équipements (location.equipments) */}
+ {/*Je crée une div pour chaque équipement avec une clé unique (key) basée sur l'index et une classe CSS 'equipment' */}
 <Collapse 
-      title="Equipements"
-      content={location.equipments.map((equipment, index) => (
-        <div key={index} className='equipment'>{equipment}</div>
+      title="Equipements" 
+      content={location.equipments.map((equipment, index) => ( 
+       
+        <div key={index} className='equipment'>{equipment}</div>   
+
       ))}
       className='collapse-equipements'
     />

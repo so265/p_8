@@ -119,23 +119,45 @@
 .collapses-flex {
   display: flex;
   justify-content: space-between; // Les collapses seront espacés également
-  width: 100%; 
+  width: 140rem; 
   margin: 0 auto; // Centre horizontalement
+  flex-wrap: wrap;
+  align-items: flex-start;
+
 }
 
 
 
 .collapse-description {
   font-weight: 400;
-  font-family: Montserrat
+    font-family: Montserrat;
+    padding: 20px;
+    background-color: #F6F7FB;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: 48%; /* Prend la moitié de l'espace disponible */
+    margin-right: 100px;
+    
 }
 
 .collapse-equipements {
-  //margin-right: 50px;
+  padding: 20px;
+    background-color: #F6F7FB;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: 48%; /* Prend la moitié de l'espace disponible */
 }
 
 .collapse-container-location {
   flex-basis: calc(50% - 10px); // 50% moins un espace de 10px entre les collapses
   margin-bottom: 20px; // Espace sous chaque collapse
-  width: 60rem;
+  width: 200rem;
+  
+
+margin-bottom: 20px; /* Espace sous chaque collapse */
+flex-grow: 1;
+align-items: flex-start;
 }
+
