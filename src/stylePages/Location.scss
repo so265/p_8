@@ -1,8 +1,8 @@
 @import '../styleComponents/colors'; //J'importe le fichier colors.scss pour appliquer la couleur rouge quand cela est nécessaire
 
 .location-images {
-  max-height: 400px; /* Ajustez cette valeur selon vos besoins */
-  object-fit: cover; /* Ajustez le comportement de l'image (cover, contain, etc.) */
+  max-height: 400px; 
+  object-fit: cover; 
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -24,8 +24,6 @@
   margin-left: 70%;
   margin-bottom: 150px;
 }
-
-
 
 .city-location {
   color: $primary-color; // J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
@@ -67,11 +65,12 @@
 }
 
 .picture-person {
-  width: 50px; // Ajustez la largeur de l'image selon vos besoins
-  height: 50px; // Ajustez la hauteur de l'image selon vos besoins
-  margin-right: 10px; // Ajustez la marge selon vos besoins
+  width: 50px; 
+  height: 50px; 
+  margin-right: 10px; 
   border-radius: 50%; //La photo ainsi est arrondie
   margin-right: 15px;
+  margin-bottom: 20px
 }
 
 .host-info {
@@ -80,16 +79,17 @@
 }
 
 .name {
-  font-size: 18px; // Ajustez la taille de la police selon vos besoins
- 
+  font-size: 18px; 
   display: flex;
   flex-direction: column; 
   align-items: center; /* Centrer horizontalement */
   text-align: center; 
   width: 70px;
-  margin-right: 40px;
+  margin-right: 10px;
   color: $primary-color;
   text-align: right;
+  margin-bottom: 35px;
+  margin-top: 20px;
 
 }
 
@@ -98,7 +98,6 @@
   align-self: flex-start; // Ajout de l'alignement vers le début sur la gauche
   margin-right: 15px;
 }
-
 
 .location-details {
   display: flex;
