@@ -25,10 +25,7 @@
   margin-bottom: 150px;
 }
 
-.host-info {
-  display: flex;
-  align-items: center;
-}
+
 
 .city-location {
   color: $primary-color; // J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
@@ -77,16 +74,22 @@
   margin-right: 15px;
 }
 
+.host-info {
+  display: flex;
+  align-items: center;
+}
+
 .name {
   font-size: 18px; // Ajustez la taille de la police selon vos besoins
-  font-weight: bold;
+ 
   display: flex;
   flex-direction: column; 
   align-items: center; /* Centrer horizontalement */
   text-align: center; 
-  width: 10px;
+  width: 70px;
   margin-right: 40px;
-
+  color: $primary-color;
+  text-align: right;
 
 }
 
