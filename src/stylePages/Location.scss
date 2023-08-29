@@ -79,11 +79,10 @@
 }
 
 .name {
-  font-size: 18px; // Ajustez la taille de la police selon vos besoins
- 
+  font-size: 18px; 
   display: flex;
   flex-direction: column; 
-  align-items: center; /* Centrer horizontalement */
+  align-items: center; /* Centre horizontalement */
   text-align: center; 
   width: 70px;
   margin-right: 10px;
@@ -116,7 +115,15 @@
   align-items: flex-end;
 }
 
-/******collapse****/
+/******collapses****/
+.collapses-flex {
+  display: flex;
+  justify-content: space-between; // Les collapses seront espacés également
+  width: 100%; 
+  margin: 0 auto; // Centre horizontalement
+}
+
+
 
 .collapse-description {
   font-weight: 400;
@@ -125,4 +132,10 @@
 
 .collapse-equipements {
   //margin-right: 50px;
+}
+
+.collapse-container-location {
+  flex-basis: calc(50% - 10px); // 50% moins un espace de 10px entre les collapses
+  margin-bottom: 20px; // Espace sous chaque collapse
+  width: 60rem;
 }

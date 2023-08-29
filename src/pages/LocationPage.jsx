@@ -52,11 +52,7 @@ function LocationPage() {
               <span key={index} className='tag'>{tag}</span>
             ))}
           </div>
-          <Collapse
-          title="Description"
-          content={location.description} //Je fais apparaitre la description en provenance du fichier Housing.json dans mon composant collapse
-          className="collapse-description"
-        />
+         
         </div>
         <div className='right-column'>
           <div className='host-info'>
@@ -65,16 +61,28 @@ function LocationPage() {
            
           </div>
           <div className='stars'>{renderStars(parseInt(location.rating))}</div> {/* Affichage des étoiles de notation */}
-          <Collapse 
-          title="Equipements"
-          content={location.equipments.map((equipment, index) => (
-            <div key={index} className='equipment'>{equipment}</div>
-          ))}
-          className='collapse-equipements'
-          />
+          </div>
+          </div>
+          {/* Conteneur des collapses */}
+          <div className='collapses-flex'>
+          <div className='collapse-container-location'>
+          <Collapse
+          title="Description"
+          content={location.description} //Je fais apparaitre la description en provenance du fichier Housing.json dans mon composant collapse
+          className="collapse-description"
+        />
+</div>
+<div className='collapse-container-location'>
+<Collapse 
+      title="Equipements"
+      content={location.equipments.map((equipment, index) => (
+        <div key={index} className='equipment'>{equipment}</div>
+      ))}
+      className='collapse-equipements'
+    />
         </div>
-       
-      </div>
+        </div>
+      
     </div>
   );
 }
