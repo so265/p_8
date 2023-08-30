@@ -70,7 +70,7 @@ function LocationPage() {
           <Collapse 
           title="Description"
           content={location.description} //Je fais apparaitre la description en provenance du fichier Housing.json dans mon composant collapse
-          className="collapse-description"
+          
         />
 </div>
 <div className='collapse-container-location'> {/*Deuxiéme collapse pour les équipements */}
@@ -81,10 +81,10 @@ function LocationPage() {
       title="Equipements" 
       content={location.equipments.map((equipment, index) => ( 
        
-        <div key={index} className='equipment'>{equipment}</div>   
+        <div key={index} className='collapse-equipment'>{equipment}</div>   
 
       ))}
-      className='collapse-equipements'
+      
     />
         </div>
         </div>
