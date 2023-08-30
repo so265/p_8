@@ -119,7 +119,7 @@
 .collapses-flex {
   display: flex;
   justify-content: space-between; // Les collapses seront espacés également
-  width: 140rem; 
+  width: 124rem; 
   margin: 0 auto; // Centre horizontalement
   flex-wrap: wrap;
   align-items: flex-start;
@@ -151,6 +151,10 @@
     width: 48%; /* Prend la moitié de l'espace disponible */
 }
 
+.equipment {
+  width: 100%;
+}
+
 .collapse-container-location {
   flex-basis: calc(50% - 10px); // 50% moins un espace de 10px entre les collapses
   margin-bottom: 20px; // Espace sous chaque collapse
@@ -161,4 +165,6 @@ margin-bottom: 20px; /* Espace sous chaque collapse */
 flex-grow: 1;
 align-items: flex-start;
 }
+
+
 
