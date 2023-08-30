@@ -208,6 +208,24 @@
 .host-info {
     margin-left: 10px;
   }
+
+  .collapse-description {
+    margin-bottom: 20px;
+  }
+
+  .collapse-container-location {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+    flex-grow: 1;
+    align-items: flex-start;
+  }
+  
+ 
+.collapse-equipment {
+  margin-top: 0; /* Annule la marge supérieure */
+  margin-bottom: 0; /* Supprime la marge inférieure */
+
+}
 }
 
 
