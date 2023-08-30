@@ -67,11 +67,7 @@
   }
 }
 
-.collapse-container:last-child {
-    margin-bottom: 40px; // J'ajoute une marge inférieure au dernier élément
-  }
-  
-  /* Style par défaut pour la flèche */
+ /* Style par défaut pour la flèche */
 .arrow {
     width: 30px; 
     height: 30px; 
@@ -95,11 +91,4 @@
     align-items: center;
   }
 
-  /***Media-queries****/
-
-/* Mobile */
-@media (max-width: 767.98px) {
-  .collapse-container:last-child {
-    margin-bottom: 0px; // J'ajoute une marge inférieure au dernier élément
-  }
-}
+ 
