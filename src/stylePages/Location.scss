@@ -90,7 +90,6 @@
   text-align: right;
   margin-bottom: 35px;
   margin-top: 20px;
-
 }
 
 .stars {
@@ -124,10 +123,7 @@
   flex-wrap: wrap;
   align-items: flex-start;
   margin-left: 20px;
-
 }
-
-
 
 .collapse-description {
   font-weight: 400;
@@ -157,13 +153,9 @@
 
 .collapse-container-location {
   flex-basis: calc(50% - 10px); // 50% moins un espace de 10px entre les collapses
-  margin-bottom: 20px; // Espace sous chaque collapse
-  
-  
-
-margin-bottom: 20px; /* Espace sous chaque collapse */
-flex-grow: 1;
-align-items: flex-start;
+  margin-bottom: 20px; /* Espace sous chaque collapse */
+  flex-grow: 1;
+  align-items: flex-start;
 }
 
 
