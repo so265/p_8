@@ -33,3 +33,9 @@ footer {
 
 }
 
+/***Media queries***/
+@media (max-width: 768px) {
+    footer {
+    height: 260px;
+      }
+  }

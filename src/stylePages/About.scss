@@ -2,3 +2,11 @@
     margin-left: 10.5%; /* Marge à gauche pour centrer */
     
 }
+
+/*****Media queries*******/
+
+@media (max-width: 768px) {
+    .accordion {
+    margin-right: 5%;
+      }
+  }
