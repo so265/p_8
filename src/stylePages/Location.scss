@@ -123,6 +123,7 @@
   margin: 0 auto; // Centre horizontalement
   flex-wrap: wrap;
   align-items: flex-start;
+  margin-left: 20px;
 
 }
 
@@ -153,7 +154,7 @@
 .collapse-container-location {
   flex-basis: calc(50% - 10px); // 50% moins un espace de 10px entre les collapses
   margin-bottom: 20px; // Espace sous chaque collapse
-  width: 200rem;
+  
   
 
 margin-bottom: 20px; /* Espace sous chaque collapse */
