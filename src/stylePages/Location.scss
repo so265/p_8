@@ -16,6 +16,8 @@
   color: $primary-color; // J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
   margin-left: 20px;
   font-family: Montserrat;
+  font-size: 40px;
+  margin-bottom: 0;
 }
 
 .host {
@@ -29,6 +31,7 @@
   color: $primary-color; // J'ajoute la variable pour ma couleur rouge en provenance du fichier colors.scss
   margin-left: 20px;
   font-family: Montserrat;
+  margin-top: 10px;
 }
 
 .tags-housing {
@@ -89,7 +92,7 @@
   color: $primary-color;
   text-align: right;
   margin-bottom: 35px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .stars {
