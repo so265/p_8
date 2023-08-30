@@ -172,6 +172,12 @@
       margin-left: 20px;
       margin-top: 40px;
     }
+
+    .collapses-flex {
+      flex-direction: column;
+      align-items: stretch; //Pour annuler align-items: flex-start
+      width: auto; //Pour supprimer la propriété width: 124rem ou width 100%
+    }
   }
 
 
@@ -187,23 +193,21 @@
     width: 100%; // Prend toute la largeur du conteneur
     height: 280px; // Hauteur ajustée selon le design
     object-fit: cover;
-   
     z-index: 1;
     border-radius: 20px;
-   
-  }
-
-  .title-images {
-    font-size: 19px;
 }
 
+  .title-images {
+    font-size: 17px;
+}
 
+.city-location {
+  font-size: 15px;
+}
 
-  .host-info {
+.host-info {
     margin-left: 10px;
   }
-
-
 }
 
 
