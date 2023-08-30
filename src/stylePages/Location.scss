@@ -144,6 +144,10 @@
 /******Media-queries******/
 
   @media (max-width: 1024px) {
+    .collapse-container-location {
+      margin-top: 0;
+    }
+    
     .location-details {
       flex-direction: column;
       align-items: flex-start;
@@ -160,6 +164,7 @@
     align-items: center;
     margin-top: 0;
     margin-right: 0;
+    margin-bottom: -50px;
     }
 
     .host-info {
@@ -213,20 +218,25 @@
     margin-bottom: 20px;
   }
 
+  .collapses-flex {
+   margin-top: 0; /* Enleve la marge au-dessus des collapses */
+  }
+
   .collapse-container-location {
     flex-basis: calc(50% - 10px);
     margin-bottom: 20px;
     flex-grow: 1;
     align-items: flex-start;
+    margin-bottom: 0; /* Enlever la marge sous chaque collapse */
   }
   
- 
-.collapse-equipment {
+ .collapse-equipment {
   margin-top: 0; /* Annule la marge supérieure */
   margin-bottom: 0; /* Supprime la marge inférieure */
+}
+}
 
-}
-}
+
 
 
 
