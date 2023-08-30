@@ -82,6 +82,11 @@
 
 /* Mobile */
 @media (max-width: 767.98px) {
+
+  .uppercase-mobile {
+    text-transform: uppercase; // Transforme le texte en majuscules uniquement en version mobile
+  }
+
   .navbar {
       gap: 10px; /* Espacement horizontal entre les éléments */
       margin-top: 15px;
@@ -105,7 +110,7 @@
     }
   
     .navbar .nav-link {
-      font-size: 20px;
+      font-size: 16px;
     }
   
     

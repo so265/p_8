@@ -9,10 +9,10 @@ function Header() {
         <img className='logoKasa' src="/logoKasa.png" alt="logo kasa" /> {/*J'affiche l'image du logo Kasa avec la classe CSS logoKasa */}
       </div>
       <div className='nav-items'>
-        <NavLink to="/" className="nav-link"> {/*Je crée un lien de navigation vers la page d'accueil */}
+      <NavLink to="/" className="nav-link uppercase-mobile">{/*Je crée un lien de navigation vers la page d'accueil */}
           Accueil
         </NavLink>
-        <NavLink to="/about" className="nav-link"> {/* {/*Je crée un lien de navigation vers la page A Propos */} 
+        <NavLink to="/about" className="nav-link uppercase-mobile"> {/* {/*Je crée un lien de navigation vers la page A Propos */} 
           A Propos
         </NavLink>
       </div>
