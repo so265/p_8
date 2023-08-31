@@ -38,7 +38,7 @@
 .tags-housing {
   color: $primary-color;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin-left: 15px;
 }
 
@@ -211,7 +211,7 @@
 }
 
 .host-info {
-    margin-left: 10px;
+    margin-left: 55px;
   }
 
   .collapse-description {
