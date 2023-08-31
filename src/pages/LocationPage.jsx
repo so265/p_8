@@ -5,8 +5,7 @@ import Carrousel from '../components/Carrousel.jsx';
 import PleineStars from '../assets/full-star.png'; // Chemin vers l'image d'étoile pleine
 import GreyStar from '../assets/grey-star.png'; // Chemin vers l'image d'étoile grise
 import Collapse from '../components/Collapse.jsx'
-
-import '../stylePages/Location.scss';
+import '../stylePages/_Location.scss';
 
 // Fonction pour afficher les étoiles pleines et grises
 function renderStars(rating) {

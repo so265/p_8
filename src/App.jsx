@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage.jsx';
 import Location from './pages/LocationPage.jsx';
 import About from './pages/About.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx'; 
-import "./App.scss";
+import "./_App.scss";
 
 function App() { //<BrowserRouter> est un composant fourni par la bibliothèque react-router-dom pour gérer la logique de routage de mon application,  conteneur qui enveloppe les différentes routes de votre application. 
   return (

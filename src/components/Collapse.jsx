@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styleComponents/Collapse-description.scss'; // J'importe les styles CSS du composant Collapse
+import '../styleComponents/_Collapse-description.scss'; // J'importe les styles CSS du composant Collapse
 import chevronUp from "../assets/chevron-up.png";
 
 function Collapse({ title, content }) {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'; //est utilisé pour créer un lien vers la page d'accueil
-import "../stylePages/NotFoundPage.scss"
+import "../stylePages/_NotFoundPage.scss"
 
 
 
