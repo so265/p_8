@@ -122,19 +122,16 @@
 .collapses-flex {
   display: flex;
   justify-content: space-between; // Les collapses seront espacés également
-  //width: 124rem; 
   margin: 0 auto; // Centre horizontalement
   flex-wrap: wrap;
   align-items: flex-start;
-  
-  width: 100%;
+  gap: 20px;
+  width: 98%;
 }
-
 
 .collapse-description, //Permet que les équipements se placent sur le coté gaucghe du collapse
 .collapse-equipment {
   width: 100%;
-  
 }
 
 .collapse-container-location {
