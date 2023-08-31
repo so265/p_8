@@ -35,8 +35,7 @@
         cursor: pointer;
         color: $primary-color;
         position: relative;
-        font-family: Montserrat;
-        //"&" me permet de me référer à l'élément parent, ici "nav-link"
+         //"&" me permet de me référer à l'élément parent, ici "nav-link"
         &:after {  // J'utilise ce pseudo-élément pour créer la ligne sous le texte du lien
           content: ""; //Je définis le contenu du pseudo-élément comme une chaîne vide.
           display: block;
