@@ -4,14 +4,12 @@
     max-width: 100vw;
     display: flex;
     justify-content: center;
-    //align-items: center; // Cette ligne alignera également verticalement l'image au milieu
     position: relative;
     margin: 0 auto; // marge égale à droite et à gauche
 
     .img-paysage {
         border-radius: 30px;
         width: 98%;
-        //max-height: 200px;
         object-fit: cover;
         margin-top: 2%;
         height: 320px;
@@ -27,9 +25,7 @@
         transform: translate(-50%, -50%);
         font-size: xxx-large;
         white-space: normal; /* Permet le retour automatique à la ligne */
-
-      
-    }}
+}}
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -38,9 +34,7 @@
     }
 }
 
-
-    
-    /* Mobile */
+ /* Mobile */
     @media (max-width: 767.98px) {
 .banner .img-paysage {
     border-radius: 10px;
@@ -48,7 +42,7 @@
     height: 200px;
 }
 
-       .banner h1 {
+.banner h1 {
       font-size: x-large;
       left: 40%;
       white-space: normal;
