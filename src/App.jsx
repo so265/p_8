@@ -19,8 +19,8 @@ function App() { //<BrowserRouter> est un composant fourni par la bibliothèque 
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </BrowserRouter>
   );
 }

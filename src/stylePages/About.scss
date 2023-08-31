@@ -8,13 +8,7 @@
 
 
 .accordion {
-    margin-left: 10.5%; /* Marge à gauche pour centrer */
+    width: 80%;
+    margin: auto;
 }
 
-/*****Media queries*******/
-
-@media (max-width: 768px) {
-    .accordion {
-    margin-right: 5%;
-      }
-  }
