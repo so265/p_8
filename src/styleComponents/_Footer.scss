@@ -31,4 +31,11 @@ footer {
     footer {
     height: 345px;
       }
+
+      footer .copyright {
+        font-size: 20px;
+        text-align: center; /* Centre le texte horizontalement */
+        width: 50%; /* Réduit la largeur du copyright pour forcer le retour à la ligne */
+        margin-top: 15px;
+       }
   }
