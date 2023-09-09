@@ -48,6 +48,7 @@
   opacity: 0;
   animation: slideDown 0.3s ease-in-out forwards;
   transform-origin: top; /*Je fais en sorte que la transition parte du haut */
+  box-sizing: border-box;
 }
 
 @keyframes slideDown {
