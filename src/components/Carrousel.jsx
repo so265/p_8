@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; //utilisée pour importer le hook useState ainsi que le module principal de React.
 import '../styleComponents/_Carrousel.scss';
 import ArrowLeft from '../assets/chevron-carrousel-left.png'
 import ArrowRight from'../assets/chevron-carrousel-right.png'
