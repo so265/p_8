@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';  //J'importe le composant NavLink de
 import '../styleComponents/_Cards.scss';
 import Housing from '../pages/Housing.json'; // J'importe les données depuis le fichier JSON pour afficher les logements.
 
-const limitedHousing = Housing.slice(-6); // J'affiche seulement les 6 dernièrs logements du fichier JSON.
+const limitedHousing = Housing; //J'affiche les 20 logements du fichier housing.json
 
 function Cards() {
   return (
